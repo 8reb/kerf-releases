@@ -6,7 +6,7 @@
 
 **PDF markup, measurement and takeoff for construction drawings.**
 
-Mark up, measure and review drawing sets on Windows: fast on big sheets, accurate to scale.
+Mark up, measure and review drawing sets on Windows, to scale.
 
 [![Download for Windows](https://img.shields.io/badge/Download-Windows%2010%20%2F%2011-2563EB?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/8reb/kerf-releases/releases/latest)
 
@@ -40,9 +40,11 @@ Kerf is made for engineers, architects, quantity surveyors and site teams who li
 
 ![Kerf reading the 1:100 scale from the PDF and setting it automatically](docs/images/autoscale.png)
 
-When you open a drawing, Kerf finds its scale on its own. It reads the scale the CAD program saved in the PDF, the scale note in the title block, or three or more dimensions that agree. It even spots A1 sheets printed on A3. One click applies the scale to every page, and one click undoes it.
+When you open a drawing, Kerf tries to find its scale on its own. It reads the scale the CAD program saved in the PDF, the scale note in the title block, or three or more dimensions that agree. It allows for A1 sheets printed on A3. A notice tells you which scale it set and where it came from. One click applies the scale to every page, and one click undoes it.
 
-## Everything a review needs
+> **Always check the scale and your measurements before you rely on them.** Kerf is a tool to help you work; the results are your responsibility.
+
+## Features
 
 | | |
 |---|---|
@@ -61,11 +63,11 @@ When you open a drawing, Kerf finds its scale on its own. It reads the scale the
 | **Password-protected PDFs** | Open them, mark them up, and save them locked again. |
 | **Explorer thumbnails** | See PDF previews right in Windows File Explorer. |
 
-Markups are saved **inside the PDF** as standard annotations, so anyone with any PDF viewer sees them.
+Markups are saved **inside the PDF** as standard PDF annotations, so other PDF viewers can show them too.
 
-## Fast on heavy drawing sets
+## Built for big drawing sets
 
-Kerf draws pages with the PDFium engine at full screen resolution. It renders only what is visible and prepares the next pages in advance. Large CAD sheets stay smooth to zoom and pan.
+Kerf draws pages with the PDFium engine at full screen resolution. It renders only what is visible and prepares the next pages in advance, so large CAD sheets stay responsive.
 
 ## Install
 
@@ -73,7 +75,7 @@ Kerf draws pages with the PDFium engine at full screen resolution. It renders on
 2. Run it. Everything Kerf needs is included, so nothing else has to be installed.
 3. Open a PDF with **Ctrl+O**, drag one onto the window, or right-click a PDF and choose **Open with › Kerf**.
 
-If Windows SmartScreen shows a warning, click **More info › Run anyway**.
+The installer isn't code-signed yet, so Windows SmartScreen may warn about it. Download Kerf only from this page. If the warning appears, click **More info** and check that the file is `Kerf-Setup-<version>.exe` from this page before choosing **Run anyway**.
 
 **Requirements:** Windows 10 (1809 or later) or Windows 11, 64-bit.
 
